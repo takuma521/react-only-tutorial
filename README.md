@@ -3,7 +3,7 @@ react-only-tutorial
 
 Overview
 
-以下のチュートリアルを元に作成しました。。
+以下のチュートリアルを元に作成しました。
 
 [react-only-tutorial](https://sbfl.net/blog/2019/02/20/react-only-tutorial/)
 
