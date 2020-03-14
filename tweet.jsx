@@ -1,6 +1,7 @@
 function Tweet(props) {
 
   const [liked, setLike] = React.useState(false);
+  const toggleLike = React.useCallback(() => setLike((prev) => !prev), {setLike});
 
   return (
     <div className={'tweet'}>
@@ -12,7 +13,7 @@ function Tweet(props) {
         </div>
         <div className={'content'}>{props.content}</div>
         <div className={'status-action'}>
-          <span>{liked ? '❤️' : '♡'}</span>
+          <span onClick={toggleLike}>{liked ? '❤️' : '♡'}</span>
         </div>
       </div>
     </div>
